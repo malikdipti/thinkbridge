@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Sadguru Tea Shop</title>
+  <link rel="stylesheet" href="{% static  'css/style.css' %}">
+
+</head>
+<body>
+
+<div class="div1">
+<h2 align="center">Sadguru's Amrit Tulya Tea Shop</h2>
+</div>
+
+<div class="leftdiv">
+
+    <form action="{% url 'addprod' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+
+               <table  id="customers">
+                       <tr>
+                            <th colspan="5" >Add Products</th>
+                       </tr>
+                    <tr>
+                        <td colspan="3">Product Id</td>
+                        <td><input type="number" name="idno" value="{{ data }}" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Name</td>
+                        <td><input type="text" name="name" placeholder="Name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">Description</td>
+                        <td>
+                            <textarea rows="5" cols="40" name="desc" placeholder="Write here...." required></textarea>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">Price</td>
+                        <td><input type="number" name="price" placeholder="Price" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Images</td>
+                        <td><input type="file" name="image"  required></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><button type="submit" class="button button1">Add Products</button> </th>
+                    </tr>
+
+               </table>
+
+    </form>
+
+</div>
+    <div class="rightdiv">
+
+               <table  id="customers">
+                       <tr style="background-color: blue;color: white;">
+                           <th>Product Id</th>
+                           <th>Product Name</th>
+                           <th>Product Description</th>
+                           <th>Price</th>
+                           <th>Product Images</th>
+                           <th>Action</th>
+
+                       </tr>
+                    {% for x in data1  %}
+                    <tr>
+                        <td>
+                         <a href="/showprod{{ x.idno }}/">{{ x.idno }}</a>
+                        </td>
+                        <td>{{ x.name }}</td>
+                        <td>{{ x.description }}</td>
+                        <td>{{ x.price }}</td>
+                        <td><img src="{{ x.images.url }}" height="50" width="50"></td>
+                       <td>
+                            <a href="{% url 'delete_id' %}?delete_idno={{ x.idno }}">
+                                <img src="{% static 'images/delete.png' %}" width="35" height="35" alt="delete">
+                            </a>
+                      </td>
+                    </tr>
+                    {% endfor %}
+
+               </table>
+
+    </div>
+
+
+</body>
+</html>

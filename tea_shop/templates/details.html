@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Sadguru Tea Shop</title>
+  <link rel="stylesheet" href="{% static  'css/style.css' %}">
+</head>
+    <body>
+
+
+            <table  id="customers" align="center">
+                                   <tr style="background-color: blue;color: white;">
+
+                                       <th>Product Name</th>
+                                       <th>Product Description</th>
+                                       <th>Price</th>
+                                       <th>Product Images</th>
+
+
+                                   </tr>
+                                     <tr>
+
+                                        <td>{{object.name }}</td>
+                                        <td>{{object.description }}</td>
+                                        <td>{{object.price}}</td>
+                                        <td><img src="{{object.images.url }}" height="50" width="50"></td>
+                                    </tr>
+
+            </table>
+    </body>
+</html>
