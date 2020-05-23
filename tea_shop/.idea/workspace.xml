@@ -102,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tea_shop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
+            <state relative-caret-position="527">
               <caret line="125" column="44" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tea_shop/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#632#674#0" expanded="true" />
@@ -120,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_teashop/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -145,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
+            <state relative-caret-position="31">
               <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
             </state>
           </provider>
@@ -160,7 +160,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_teashop/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -200,7 +200,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-24" />
     <option name="y" value="24" />
     <option name="width" value="1346" />
@@ -381,17 +381,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tea_shop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
+        <state relative-caret-position="527">
           <caret line="125" column="44" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tea_shop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="255">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#632#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_teashop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1590158087452" expanded="true" signature="768:827" ph="..." />
           </folding>
         </state>
       </provider>
@@ -405,7 +416,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+        <state relative-caret-position="31">
           <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
         </state>
       </provider>
@@ -421,17 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_teashop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1590158087452" expanded="true" signature="768:827" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
