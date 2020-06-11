@@ -23,8 +23,8 @@ def addProduct(request):
     p_name=request.POST.get("name")
     p_desc=request.POST.get("desc")
     p_price=request.POST.get("price")
-    p_image=request.FILES["image"]
-    res=Teashop(idno=p_id,name=p_name,description=p_desc,price=p_price,images=p_image)
+    p_pic=request.FILES.get("uploadpic")
+    res=Teashop(idno=p_id,name=p_name,description=p_desc,price=p_price,picture=p_pic)
     res.save()
 
     return createProduct(request)

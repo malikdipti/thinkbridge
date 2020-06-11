@@ -22,9 +22,9 @@ from tea_shop import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.createProduct),
+    path('',views.createProduct,name='list'),
     path('addprod/',views.addProduct,name="addprod"),
-    path('showprod<int:pk>/',views.DisplayProduct.as_view()),
+    path('showprod<int:pk>/',views.DisplayProduct.as_view(), name='showprod'),
     path('delete_id/',views.deleteProduct,name='delete_id'),
 ]
 

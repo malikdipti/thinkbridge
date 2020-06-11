@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td colspan="3">Images</td>
-                        <td><input type="file" name="image"  required></td>
+                        <td><input type="file" name="uploadpic" required></td>
                     </tr>
                     <tr>
                         <th colspan="4"><button type="submit" class="button button1">Add Products</button> </th>
@@ -74,7 +74,7 @@
                         <td>{{ x.name }}</td>
                         <td>{{ x.description }}</td>
                         <td>{{ x.price }}</td>
-                        <td><img src="{{ x.images.url }}" height="50" width="50"></td>
+                        <td><img src="{{ x.picture.url }}" height="50" width="50"></td>
                        <td>
                             <a href="{% url 'delete_id' %}?delete_idno={{ x.idno }}">
                                 <img src="{% static 'images/delete.png' %}" width="35" height="35" alt="delete">
